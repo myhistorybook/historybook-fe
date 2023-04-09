@@ -7,6 +7,12 @@
 <script lang="ts" setup>
 useHead({
 	title: "一梦浮生",
+	meta: [
+		{
+			name: 'description',
+			content: '记录你的人生轨迹。用文字、图片记录下你生活的点点滴滴。'
+		}
+	]
 });
 </script>
 
