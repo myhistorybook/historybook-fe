@@ -1,7 +1,7 @@
 <template>
 	<header class="header">
 		<div class="container">
-			<a class="logo">一梦浮生</a>
+			<NuxtLink to="/" class="logo">一梦浮生</NuxtLink>
 			<ul class="tab-list">
 				<li
 					v-for="tab in tabList"
@@ -66,6 +66,7 @@ const handleClick = (tab) => {
 		letter-spacing: 1px;
 		font-family: TChinese, SimSun, FangSong, STSong, STZhongsong, LiSu, KaiTi,
 			"Microsoft YaHei";
+		text-decoration: none;
 	}
 	.tab-list {
 		display: flex;
