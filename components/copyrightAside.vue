@@ -6,7 +6,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				href="https://beian.miit.gov.cn/"
-				>鲁 ICP备15006514号 - 10</a
+				>{{copyrightNum}}</a
 			>
 		</div>
 		<div class="footer-item">
@@ -31,7 +31,16 @@
 		</div>
 	</footer>
 </template>
-
+<script setup>
+const copyrightNum = computed(() => {
+	if (process.client) {  // 判断是否是客户端环境
+		if (window && window.location.host.includes('myhistorybook')) {
+			return '鲁 ICP备15006514号 - 10'
+		}
+	}
+	return '鲁 ICP备15006514号 - 7'
+})
+</script>
 <style lang="less" scoped>
 .footer {
 	color: #8590a6;
