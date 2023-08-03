@@ -7,6 +7,6 @@
 </template>
 <script setup>
 useHead({
-    title: '关于我们 - 一梦浮生'
+    title: '关于我们 | 一梦浮生'
 })
 </script>

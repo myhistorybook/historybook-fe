@@ -10,6 +10,6 @@
 </template>
 <script setup>
 useHead({
-	title: "首页 - 一梦浮生",
+	title: "首页 | 一梦浮生",
 });
 </script>
